@@ -14,10 +14,11 @@ Organisations can create an account to offer activities to visitors.
 
 ## Stack
 App made in JavaScript
+- React
 - Node.js
 - Express
+- PostgreSQL
 - JWT
-- React
 
 ## How to install the project?
 - Clone the project
