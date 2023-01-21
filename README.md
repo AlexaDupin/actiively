@@ -35,7 +35,7 @@ Searching for judo in Paris, for beginners, female on Thursday:
 https://user-images.githubusercontent.com/79219750/213878111-d9074079-4fab-40b8-91ab-96ed2ef15089.mp4
 
 Login as judo association on mobile:
-https://user-images.githubusercontent.com/79219750/213878438-e3bf60d5-39a0-4a4c-8d48-3252e25867a8.mp4
+https://user-images.githubusercontent.com/79219750/213880290-a1d2f55e-30ea-4953-bc56-34cbcc492725.mp4
 
 Editing an activity, changing hours on mobile:
 https://user-images.githubusercontent.com/79219750/213878789-14e10df9-90e4-468b-8e7b-bab3aa2b9299.mp4
