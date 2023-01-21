@@ -3,7 +3,6 @@ require('dotenv').config();
 const express = require('express');
 const router = require('./routers');
 const cors = require('cors');
-const cookieParser = require('cookie-parser');
 
 const app = express();
 
@@ -16,7 +15,6 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-app.use(cookieParser());
 app.use(router);
 
 module.exports = app

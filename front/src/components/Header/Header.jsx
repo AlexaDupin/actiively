@@ -19,6 +19,8 @@ function Header({
     setIsBurgerOpen(!isBurgerOpen);
   };
 
+  console.log('isBurgerOpen', isBurgerOpen);
+
   const navigate = useNavigate();
 
   // To identify the page we are currently on
