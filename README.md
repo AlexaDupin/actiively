@@ -29,7 +29,7 @@ App made in JavaScript
   - yarn
   - yarn start
 
-# What does it look like?
+## What does it look like?
 
 Searching for judo in Paris, for beginners, female on Thursday:
 https://user-images.githubusercontent.com/79219750/213878111-d9074079-4fab-40b8-91ab-96ed2ef15089.mp4
