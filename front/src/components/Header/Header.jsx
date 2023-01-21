@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
+import {
+  Link, useNavigate, NavLink,
+} from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,21 +23,18 @@ function Header({
 
   const navigate = useNavigate();
 
-  // To identify the page we are currently on
-  const location = useLocation();
-  const [currentPath, setCurrentPath] = useState('');
-
-  // Give the URL to state whenever URL changes
-  useEffect(() => {
-    setCurrentPath(location.pathname);
-  }, [location]);
-
   // Logout Feature
   const handleLogout = () => {
     setToken(null);
     localStorage.clear(); // Remove token from localStorage in browser
     setIsLogged(false);
+    setIsBurgerOpen(false); // To have menu closed on next login
     navigate('/');
+  };
+
+  // Underline menu item that is active
+  const activeStyle = {
+    textDecoration: 'underline',
   };
 
   return (
@@ -47,6 +46,7 @@ function Header({
       <nav>
         {/* If not logged, show login button */}
         {!isLogged && (
+
         <Link to="/login">
           <button type="button" className="appheader-button login-button">Connexion</button>
           <FontAwesomeIcon icon={faUser} size="2x" className="appheader-button-mobile" />
@@ -54,36 +54,53 @@ function Header({
         )}
 
         {/* If logged, show profile and logout buttons */}
-        {/* Profile and activities buttons will toggle depending on the page we are on */}
         <ul className={`appheader-navbar ${isBurgerOpen ? 'appheader-navbar-open' : 'appheader-navbar-closed'}`}>
           <li>
             {' '}
-            {isLogged && (currentPath !== '/organism/profile') && (
-            <Link to="/organism/profile" className="appheader-profile">
-              <button type="button" className="appheader-button" onClick={toggleBurger}>Mon profil</button>
-            </Link>
+            {isLogged && (
+            <NavLink
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              className="appheader-button"
+              to="/organism/profile"
+              onClick={toggleBurger}
+            >
+              Mon profil
+            </NavLink>
             )}
           </li>
           <li>
             {' '}
-            {isLogged && (currentPath !== '/organism/activities') && (
-            <Link to="/organism/activities" className="appheader-profile">
-              <button type="button" className="appheader-button" onClick={toggleBurger}>Mes activités</button>
-            </Link>
-            )}
-          </li>
-          <li>
-            {isLogged && (currentPath !== '/organism/create') && (
-            <Link to="/organism/create" className="appheader-profile">
-              <button type="button" className="appheader-button" onClick={toggleBurger}>Ajouter une activité</button>
-            </Link>
+            {isLogged && (
+            <NavLink
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              className="appheader-button"
+              to="/organism/activities"
+              onClick={toggleBurger}
+            >
+              Mes activités
+            </NavLink>
             )}
           </li>
           <li>
             {isLogged && (
-            <div className="appheader-logout">
-              <button type="button" className="appheader-button" onClick={handleLogout}>Déconnexion</button>
-            </div>
+            <NavLink
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              className="appheader-button"
+              to="/organism/create"
+              onClick={toggleBurger}
+            >
+              Ajouter une activité
+            </NavLink>
+            )}
+          </li>
+          <li>
+            {isLogged && (
+            <NavLink
+              className="appheader-button"
+              onClick={handleLogout}
+            >
+              Déconnexion
+            </NavLink>
             )}
           </li>
         </ul>

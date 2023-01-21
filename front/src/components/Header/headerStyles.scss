@@ -54,28 +54,14 @@
     .appheader {
 
         &-button {
+        display: block;
+        text-align: center;
         height: 10vh;
         width: 100vw;
-        background-color: #fff;
-        color: #00b5ad;
-        font-weight: bold;
-        border: transparent;
-        box-sizing: content-box;
         margin-right: -15px;
+        margin-top: -1px; 
+        padding-top: 10%;
         }
-
-        // display: block; */
-        // height: 10vh;
-        // width: 100vw;
-        // background-color: #fff;
-        // color: #00b5ad;
-        // font-weight: bold;
-        // /* padding: 1em 6em; */
-        // /* border-radius: 10px; */
-        // /* border: transparent; */
-        // /* margin-left: 1rem; */
-        // /* box-sizing: content-box; */
-        // margin-right: -15px;
 
         &-burger {
         display: block;

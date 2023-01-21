@@ -89,6 +89,11 @@ function ModifActivity({
           [],
         );
 
+    // Scroll to top when landing on page
+    useEffect(() => {
+         window.scrollTo(0, 0);
+        }, []);
+
     return (
 
         <div className="container">

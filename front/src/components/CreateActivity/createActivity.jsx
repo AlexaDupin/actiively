@@ -6,7 +6,7 @@
 /* eslint-disable indent */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useForm } from 'react-hook-form';
 import { Button, Form } from 'semantic-ui-react';
@@ -74,6 +74,11 @@ function CreateActivity({
             });
         navigate('/organism/activities');
     };
+
+    // Scroll to top when landing on page
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
 return (
         <div className="container">
