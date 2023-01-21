@@ -28,9 +28,11 @@ function Header({
     setToken(null);
     localStorage.clear(); // Remove token from localStorage in browser
     setIsLogged(false);
+    setIsBurgerOpen(false); // To have menu closed on next login
     navigate('/');
   };
 
+  // Underline menu item that is active
   const activeStyle = {
     textDecoration: 'underline',
   };
@@ -52,7 +54,6 @@ function Header({
         )}
 
         {/* If logged, show profile and logout buttons */}
-        {/* Profile and activities buttons will toggle depending on the page we are on */}
         <ul className={`appheader-navbar ${isBurgerOpen ? 'appheader-navbar-open' : 'appheader-navbar-closed'}`}>
           <li>
             {' '}
