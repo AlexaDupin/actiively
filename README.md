@@ -28,3 +28,10 @@ App made in JavaScript
 - Go to Front folder:
   - yarn
   - yarn start
+
+# How does it look like?
+
+Searching for judo in Paris:
+https://user-images.githubusercontent.com/79219750/213878111-d9074079-4fab-40b8-91ab-96ed2ef15089.mp4
+
+
