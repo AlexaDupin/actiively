@@ -1,5 +1,6 @@
 [
     {
+        "code_organism": 1,
         "email": "sindresorhus@gmail.com",
         "name": "Tennis4life",
         "password": "Tests1234!",
@@ -8,6 +9,7 @@
         "phone_number": "0702032344"
     },
     {
+        "code_organism": 2,
         "email": "theorganization2@gmail.com",
         "name": "Danseller",
         "password": "Tests1234!",
@@ -16,6 +18,7 @@
         "phone_number": "0702035896"
     },
     {
+        "code_organism": 3,
         "email": "monique.pro@gmail.com",
         "name": "Les Raquettes",
         "password": "Tests1234!",
@@ -24,6 +27,7 @@
         "phone_number": "0689820214"
     },
     {
+        "code_organism": 4,
         "email": "vincent.piano@gmail.com",
         "name": "Do Ré Mi",
         "password": "Tests1234!",
@@ -32,6 +36,7 @@
         "phone_number": "0625417885"
     },
     {
+        "code_organism": 5,
         "email": "pop@gmail.com",
         "name": "Les Popys",
         "password": "Tests1234!",
@@ -40,6 +45,7 @@
         "phone_number": "0642417880"
     },
     {
+        "code_organism": 6,
         "email": "julien@gmail.com",
         "name": "Judo Fans",
         "password": "Tests1234!",
@@ -48,6 +54,7 @@
         "phone_number": "0633417880"
     },
     {
+        "code_organism": 7,
         "email": "yoko@gmail.com",
         "name": "Les Yogis",
         "password": "Tests1234!",

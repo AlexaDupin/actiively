@@ -43,7 +43,7 @@ function CreateActivity({
     });
 
     const onSubmit = (data) => {
-        console.log('data:', data);
+        // console.log('data:', data);
         axios
             .post(
                 'http://localhost:3001/api/v1/organism/create',
@@ -55,7 +55,7 @@ function CreateActivity({
                 },
             )
             .then((response) => {
-                console.log('response of create:', response.data);
+                // console.log('response of create:', response.data);
                 if (response.data.error) {
                     swal({
                         title: "L'activité doit avoir un nom unique !",

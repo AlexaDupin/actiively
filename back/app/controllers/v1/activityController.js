@@ -60,6 +60,7 @@ module.exports = {
             const activityExist = await activityDatamapper.findByName(req.body.name);
             //TODO: Edit the function (removing the if statement below and fix the errors)
             if(activityExist) {
+                console.log('activity exists', req.body);
                 res.json({error: `Activity ${activityExist.name} already exists`});
                 throw new Error(`Activity ${activityExist.name} already exists`);
 
