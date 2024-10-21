@@ -93,7 +93,7 @@ return (
                             URL de l&apos;image
                         </label>
                         <input
-                            placeholder="URL de votre image préférée"
+                            placeholder="URL de l'image qui sera associée à votre activité"
                             id="image_url"
                             type="url"
                             name="image_url"
