@@ -35,7 +35,7 @@ function HomePage() {
               <div className="field color2">
                 <label>Nom de l&apos;activité</label>
                 <input
-                  placeholder="Judo..."
+                  placeholder="ex. judo"
                   value={state.keyword}
                   onChange={handleChange}
                   name="keyword"
@@ -45,7 +45,7 @@ function HomePage() {
               <div className="field color2">
                 <label>Code postal</label>
                 <input
-                  placeholder="69003..."
+                  placeholder="ex. 75, 75006"
                   value={state.zip_code}
                   onChange={handleChange}
                   name="zip_code"

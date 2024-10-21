@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -75,17 +76,19 @@ function Login({
 
       <div className="container-form container-form-login">
         <div>
-          <h2 className="form-title"> Connexion organisme</h2>
+          <h2 className="form-title">Connexion organisme</h2>
         </div>
         <div>
           <h2 className="form-error">{errMsg}</h2>
         </div>
         <form className="ui form container-form" onSubmit={handleSubmit}>
           <div className="field">
-            <input type="email" placeholder="adresse mail" onChange={(event) => setEmail(event.target.value)} />
+            <label htmlFor="email">Votre adresse e-mail</label>
+            <input type="email" id="email" placeholder="Adresse e-mail" onChange={(event) => setEmail(event.target.value)} />
           </div>
           <div className="field">
-            <input type="password" placeholder="mot de passe" onChange={(event) => setPassword(event.target.value)} />
+            <label htmlFor="password">Votre mot de passe</label>
+            <input type="password" id="password" placeholder="Mot de passe" onChange={(event) => setPassword(event.target.value)} />
           </div>
 
           <div className="field">
@@ -94,7 +97,7 @@ function Login({
 
         </form>
         <div>
-          <Link to="/register" className="link"> Pas encore inscrit ?</Link>
+          <Link to="/register" className="link">Vous n&apos;avez pas encore de compte ?</Link>
         </div>
         <div>
           <a href="https://storyset.com/together" className="attribution">Together illustrations by Storyset</a>

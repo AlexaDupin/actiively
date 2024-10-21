@@ -70,7 +70,7 @@ function Registration() {
               <Icon disabled name="user" size="large" className="icon" />
             </label>
             <input
-              placeholder="Les amis de la forêt..."
+              placeholder="Comment s'appelle votre organisme"
               id="name"
               type="text"
               name="name"
@@ -91,7 +91,7 @@ function Registration() {
               <Icon disabled name="mail" size="large" className="icon" />
             </label>
             <input
-              placeholder="MonOrganisme@gmail.com"
+              placeholder="E-mail pour vous connecter au compte (privé)"
               id="email"
               type="text"
               name="email"
@@ -99,7 +99,7 @@ function Registration() {
                 required: 'Ce champ est obligatoire',
                 pattern: {
                   value: /(.+)@(.+){2,}\.(.+){2,}/,
-                  message: 'format adresse mail invalide',
+                  message: 'Format adresse e-mail invalide',
                 },
               })}
             />
@@ -112,19 +112,19 @@ function Registration() {
               <Icon disabled name="key" size="large" className="icon" />
             </label>
             <input
-              placeholder="Mot de passe..."
+              placeholder="Mot de passe"
               id="password"
               type="password"
               name="password"
               {...register('password', {
-                required: 'un mot de passe est requis',
+                required: 'Un mot de passe est requis',
                 pattern: {
                   value: /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/,
-                  message: 'format invalide',
+                  message: 'Format invalide',
                 },
                 minLength: {
                   value: 3,
-                  message: 'doit contenir au moins 3 caractères',
+                  message: 'Doit contenir au moins 3 caractères',
                 },
               })}
 
@@ -153,7 +153,7 @@ function Registration() {
               <Icon disabled name="phone" size="large" className="icon" />
             </label>
             <input
-              placeholder="06 20 76..."
+              placeholder="Ce numéro sera affiché publiquement"
               id="phone_number"
               type="text"
               name="phone_number"
@@ -161,7 +161,7 @@ function Registration() {
                 required: 'Ce champ est obligatoire',
                 pattern: {
                   value: /^(?:(?:\+|00)33[\s.-]{0,3}(?:\(0\)[\s.-]{0,3})?|0)[\s.-]?[1-9](?:(?:[\s.-]?\d{1}){8}|\d{2}(?:[\s.-]?\d{3}){2})$/,
-                  message: 'numéro de téléphone invalide',
+                  message: 'Numéro de téléphone invalide',
                 },
               })}
             />
@@ -174,7 +174,7 @@ function Registration() {
               <Icon disabled name="mail" size="large" className="icon" />
             </label>
             <input
-              placeholder="MonOrganisme@gmail.com..."
+              placeholder="Cet e-mail sera affiché publiquement"
               id="contact_email"
               type="text"
               name="contact_email"
@@ -182,7 +182,7 @@ function Registration() {
                 required: 'Ce champ est obligatoire',
                 pattern: {
                   value: /(.+)@(.+){2,}\.(.+){2,}/,
-                  message: 'Adresse mail invalide',
+                  message: 'Adresse e-mail invalide',
                 },
               })}
             />
@@ -195,7 +195,7 @@ function Registration() {
               <Icon disabled name="pencil" size="large" className="icon" />
             </label>
             <textarea
-              placeholder="Ma super association..."
+              placeholder="Décrivez votre organisme en quelques mots"
               id="description"
               type="text"
               name="

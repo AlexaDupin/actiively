@@ -109,7 +109,7 @@ return (
                             Nom de l&apos;activité
                         </label>
                         <input
-                            placeholder="les sbires de Gul'dan (nom unique requis)"
+                            placeholder="ex. Cours de tennis débutants"
                             id="name"
                             type="text"
                             name="name"
@@ -128,7 +128,7 @@ return (
                             Description
                         </label>
                         <textarea
-                            placeholder="Ma super association..."
+                            placeholder="Décrivez cette activité en quelques mots"
                             id="description"
                             type="text"
                             name="description"
@@ -143,7 +143,7 @@ return (
                             Adresse
                         </label>
                         <input
-                            placeholder="123 royaume de Lordaeron"
+                            placeholder="Adresse où se déroule l'activité"
                             id="address"
                             type="text"
                             name="address"
@@ -162,7 +162,7 @@ return (
                             Ville
                         </label>
                         <input
-                            placeholder="Lyon"
+                            placeholder="Ville où se déroule l'activité"
                             id="city"
                             type="text"
                             name="city"
@@ -181,7 +181,7 @@ return (
                             Code postal
                         </label>
                         <input
-                            placeholder="01000"
+                            placeholder="Code postal"
                             id="zip_code"
                             type="number"
                             name="zip_code"
@@ -189,7 +189,7 @@ return (
                                 required: 'Ce champ est obligatoire',
                                 pattern: {
                                     value: /^[0-9]{5}$/,
-                                    message: 'format code postal invalide',
+                                    message: 'Format de code postal invalide',
                                 },
                             })}
                         />
@@ -200,7 +200,7 @@ return (
                             Jour de l&apos;activité
                             <select
                                 id="day"
-                                {...register('day', { required: 'Ces champs sont obligatoire' })}
+                                {...register('day', { required: 'Ces champs sont obligatoires' })}
                             >
                                 <option value="Lundi">Lundi</option>
                                 <option value="Mardi">Mardi</option>
@@ -217,7 +217,7 @@ return (
                             Heure de début de l&apos;activité
                             <input
                                 id="start_time"
-                                placeholder="heure de début de l'activité"
+                                placeholder="Heure à laquelle débute l'activité"
                                 type="text"
                                 name="start_time"
                                 {...register('start_time', {
@@ -230,7 +230,7 @@ return (
                             Heure de fin de l&apos;activité
                             <input
                                 id="end_time"
-                                placeholder="heure de fin de l'activité"
+                                placeholder="Heure à laquelle se termine l'activité"
                                 type="text"
                                 name="end_time"
                                 {...register('end_time', {
@@ -249,7 +249,7 @@ return (
                             Tarif
                         </label>
                         <input
-                            placeholder="1 euro ca mange pas de pain"
+                            placeholder="Combien coûte l'activité"
                             id="price"
                             type="number"
                             name="price"
@@ -279,7 +279,7 @@ return (
                             Genre
                             <select
                                 id="gender"
-                                {...register('gender', { required: 'les 2 champs sont obligatoires' })}
+                                {...register('gender', { required: 'Les 2 champs sont obligatoires' })}
                             >
                                 <option value="Masculin">Masculin</option>
                                 <option value="Féminin">Féminin</option>
@@ -292,7 +292,7 @@ return (
                             Niveau
                             <select
                                 id="level"
-                                {...register('level', { required: 'les 2 champs sont obligatoires' })}
+                                {...register('level', { required: 'Les 2 champs sont obligatoires' })}
                             >
                                 <option value="Débutant">Débutant</option>
                                 <option value="Tous niveaux">Tous niveaux</option>
