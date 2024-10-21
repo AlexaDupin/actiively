@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 const corsOptions = {
     // origin: 'http://localhost:3000',
-    origin: 'http://actiively-front.onrender.com/',
+    origin: 'https://actiively-front.onrender.com',
     // origin: '*',
     optionsSuccessStatus: 200
 };
