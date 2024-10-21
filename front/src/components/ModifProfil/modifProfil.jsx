@@ -23,7 +23,7 @@ function ModifProfil({
   const onSubmit = (data) => {
     axios
       .patch(
-        'http://localhost:3001/api/v1/organism/profile/edit',
+        'https://actiively-back-zjty.onrender.com/api/v1/organism/profile/edit',
         data,
         {
           headers: {
@@ -48,7 +48,7 @@ function ModifProfil({
   // Request to API to get profile data of an organism depending on token
   const fetchOrganism = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/api/v1/organism/profile', {
+      const response = await axios.get('https://actiively-back-zjty.onrender.com/api/v1/organism/profile', {
         headers: {
           authorization: token,
         },

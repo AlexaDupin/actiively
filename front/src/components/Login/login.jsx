@@ -32,7 +32,7 @@ function Login({
     // Axios request to send email and password to API
     try {
       const response = await axios.post(
-        'http://localhost:3001/api/v1/organism/login',
+        'https://actiively-back-zjty.onrender.com/api/v1/organism/login',
         {
           email,
           password,

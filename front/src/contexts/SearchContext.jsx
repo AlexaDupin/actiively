@@ -24,7 +24,7 @@ export function SearchContextProvider({ children }) {
       return;
     }
     try {
-      await axios.post('http://localhost:3001/api/v1/activity/search', {
+      await axios.post('https://actiively-back-zjty.onrender.com/api/v1/activity/search', {
         keyword: search.keyword.toLowerCase(),
         zip_code: search.zip_code,
       })

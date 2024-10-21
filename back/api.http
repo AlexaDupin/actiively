@@ -3,7 +3,7 @@
 # Nécessite l'extension REST Client pour VSCode
 # https://marketplace.visualstudio.com/items?itemName=humao.rest-client
 ################################################################################
-@endpoint = http://localhost:3001/api/v1
+@endpoint = https://actiively-back-zjty.onrender.com/api/v1
 
 ### GET ONE ACTIVITY ###
 GET {{endpoint}}/activity/15

@@ -36,7 +36,7 @@ function Registration() {
   const onSubmit = (data) => {
     axios
       .post(
-        'http://localhost:3001/api/v1/organism/register',
+        'https://actiively-back-zjty.onrender.com/api/v1/organism/register',
         data,
       )
       .then((response) => {

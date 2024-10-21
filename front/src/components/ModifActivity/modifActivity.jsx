@@ -46,7 +46,7 @@ function ModifActivity({
     // Request to API to get data for an Activity for placeholders
     const fetchActivity = async () => {
         try {
-        const response = await axios.get(`http://localhost:3001/api/v1/activity/${id}`);
+        const response = await axios.get(`https://actiively-back-zjty.onrender.com/api/v1/activity/${id}`);
         // Update states with results
         setActivity(response.data);
         }
@@ -59,7 +59,7 @@ function ModifActivity({
     const onSubmit = (data) => {
         axios
             .patch(
-                `http://localhost:3001/api/v1/organism/activity/${id}/edit`,
+                `https://actiively-back-zjty.onrender.com/api/v1/organism/activity/${id}/edit`,
                 data,
                 {
                     headers: {
