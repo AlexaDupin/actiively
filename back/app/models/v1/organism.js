@@ -18,7 +18,7 @@ module.exports = {
             organism.description, 
             organism.contact_email, 
             organism.phone_number]);
-
+        // console.log("query", organismQuery.rows[0]);
         return organismQuery.rows[0];
     },
     /**
