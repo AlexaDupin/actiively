@@ -34,7 +34,7 @@ function Filters() {
       {!hiden && (
       <div className="global-container">
         <div>
-          <h1 className="filter-title">Jours de disponibilité</h1>
+          <h1 className="filter-title">Days of practice</h1>
           <div className="filters-container">
             <div className="cat action">
               <label>
@@ -44,7 +44,7 @@ function Filters() {
                   name="monday"
                   onChange={handleCheckBoxChange}
                 />
-                <span>Lundi</span>
+                <span>Monday</span>
               </label>
             </div>
             <div className="cat action">
@@ -55,7 +55,7 @@ function Filters() {
                   name="tuesday"
                   onChange={handleCheckBoxChange}
                 />
-                <span>Mardi</span>
+                <span>Tuesday</span>
               </label>
             </div>
             <div className="cat action">
@@ -66,7 +66,7 @@ function Filters() {
                   name="wednesday"
                   onChange={handleCheckBoxChange}
                 />
-                <span>Mercredi</span>
+                <span>Wednesday</span>
               </label>
             </div>
             <div className="cat action">
@@ -77,7 +77,7 @@ function Filters() {
                   name="thursday"
                   onChange={handleCheckBoxChange}
                 />
-                <span>Jeudi</span>
+                <span>Thursday</span>
               </label>
             </div>
             <div className="cat action">
@@ -88,7 +88,7 @@ function Filters() {
                   name="friday"
                   onChange={handleCheckBoxChange}
                 />
-                <span>Vendredi</span>
+                <span>Friday</span>
               </label>
             </div>
             <div className="cat action">
@@ -99,7 +99,7 @@ function Filters() {
                   name="saturday"
                   onChange={handleCheckBoxChange}
                 />
-                <span>Samedi</span>
+                <span>Saturday</span>
               </label>
             </div>
             <div className="cat action">
@@ -110,13 +110,13 @@ function Filters() {
                   name="sunday"
                   onChange={handleCheckBoxChange}
                 />
-                <span>Dimanche</span>
+                <span>Sunday</span>
               </label>
             </div>
           </div>
         </div>
         <div>
-          <h1 className="filter-title">Niveau</h1>
+          <h1 className="filter-title">Level</h1>
           <div className="filters-container">
             <div className="cat action">
               <label>
@@ -126,7 +126,7 @@ function Filters() {
                   name="allLevel"
                   onChange={handleCheckBoxChange}
                 />
-                <span>Tous niveaux</span>
+                <span>All levels</span>
               </label>
             </div>
             <div className="cat action">
@@ -137,7 +137,7 @@ function Filters() {
                   name="beginner"
                   onChange={handleCheckBoxChange}
                 />
-                <span>Débutant</span>
+                <span>Beginner</span>
               </label>
             </div>
 
@@ -149,13 +149,13 @@ function Filters() {
                   name="confirmed"
                   onChange={handleCheckBoxChange}
                 />
-                <span>Confirmé</span>
+                <span>Experienced</span>
               </label>
             </div>
           </div>
         </div>
         <div>
-          <h1 className="filter-title">Genre</h1>
+          <h1 className="filter-title">Gender</h1>
           <div className="filters-container">
             <div className="cat action">
               <label>
@@ -165,7 +165,7 @@ function Filters() {
                   name="mixt"
                   onChange={handleCheckBoxChange}
                 />
-                <span>Mixte</span>
+                <span>Mixed</span>
               </label>
             </div>
             <div className="cat action">
@@ -176,7 +176,7 @@ function Filters() {
                   name="women"
                   onChange={handleCheckBoxChange}
                 />
-                <span>Féminin</span>
+                <span>Female</span>
               </label>
             </div>
             <div className="cat action">
@@ -187,7 +187,7 @@ function Filters() {
                   name="men"
                   onChange={handleCheckBoxChange}
                 />
-                <span>Masculin</span>
+                <span>Male</span>
               </label>
             </div>
           </div>

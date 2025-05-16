@@ -42,8 +42,8 @@ function Registration() {
       .then((response) => {
         console.log(response.data);
         swal({
-          title: 'Votre organisme a bien été créé !',
-          text: 'Veuillez vous connecter.',
+          title: 'Your organization was successfully created!',
+          text: 'Please login.',
           icon: 'success',
         });
       })
@@ -60,25 +60,25 @@ function Registration() {
       </div>
       <div className="container-form">
 
-        <h1 className="container-title">Inscription</h1>
+        <h1 className="container-title">Sign up</h1>
 
         <form className="ui form container-form" onSubmit={handleSubmit(onSubmit)}>
 
           <div className="field">
             <label className="label-form">
-              Nom de l&apos;organisme
+              Organization name
               <Icon disabled name="user" size="large" className="icon" />
             </label>
             <input
-              placeholder="Comment s'appelle votre organisme"
+              placeholder="Name of your organization"
               id="name"
               type="text"
               name="name"
               {...register('name', {
-                required: 'Ce champ est obligatoire',
+                required: 'This field is mandatory',
                 minLength: {
                   value: 3,
-                  message: '3 caractères minimum',
+                  message: '3 characters minimum',
                 },
               })}
             />
@@ -87,19 +87,19 @@ function Registration() {
 
           <div className="field">
             <label>
-              E-mail de connexion
+              Login email
               <Icon disabled name="mail" size="large" className="icon" />
             </label>
             <input
-              placeholder="E-mail pour vous connecter au compte (privé)"
+              placeholder="Email to log into your account (private)"
               id="email"
               type="text"
               name="email"
               {...register('email', {
-                required: 'Ce champ est obligatoire',
+                required: 'This field is mandatory',
                 pattern: {
                   value: /(.+)@(.+){2,}\.(.+){2,}/,
-                  message: 'Format adresse e-mail invalide',
+                  message: 'Invalid email address format',
                 },
               })}
             />
@@ -108,23 +108,23 @@ function Registration() {
 
           <div className="field">
             <label>
-              Mot de passe
+              Password
               <Icon disabled name="key" size="large" className="icon" />
             </label>
             <input
-              placeholder="Mot de passe"
+              placeholder="Your password"
               id="password"
               type="password"
               name="password"
               {...register('password', {
-                required: 'Un mot de passe est requis',
+                required: 'A password is required',
                 pattern: {
                   value: /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/,
-                  message: 'Format invalide',
+                  message: 'Invalid format',
                 },
                 minLength: {
                   value: 3,
-                  message: 'Doit contenir au moins 3 caractères',
+                  message: '3 characters minimum',
                 },
               })}
 
@@ -133,35 +133,35 @@ function Registration() {
           {errors.password && <p className="errors">{errors.password.message}</p>}
           <div className="field">
             <label>
-              Confirmer le mot de passe
+              Confirm password
               <Icon disabled name="key" size="large" className="icon" />
             </label>
             <input
-              placeholder="Confirmez le mot de passe"
+              placeholder="Confirm password"
               id="confirm_password"
               type="password"
               name="confirm_password"
               {...register('confirm_password', {
-                validate: (value) => value === password.current || 'Les mots de passe ne correspondent pas',
+                validate: (value) => value === password.current || 'The passwords do not match',
               })}
             />
           </div>
           {errors.confirm_password && <p className="errors">{errors.confirm_password.message}</p>}
           <div className="field">
             <label>
-              Numéro de téléphone
+              Phone number
               <Icon disabled name="phone" size="large" className="icon" />
             </label>
             <input
-              placeholder="Ce numéro sera affiché publiquement"
+              placeholder="This phone number will be displayed publicly"
               id="phone_number"
               type="text"
               name="phone_number"
               {...register('phone_number', {
-                required: 'Ce champ est obligatoire',
+                required: 'This field is mandatory',
                 pattern: {
                   value: /^(?:(?:\+|00)33[\s.-]{0,3}(?:\(0\)[\s.-]{0,3})?|0)[\s.-]?[1-9](?:(?:[\s.-]?\d{1}){8}|\d{2}(?:[\s.-]?\d{3}){2})$/,
-                  message: 'Numéro de téléphone invalide',
+                  message: 'Invalid phone number format',
                 },
               })}
             />
@@ -170,19 +170,19 @@ function Registration() {
 
           <div className="field">
             <label>
-              E-mail de contact
+              Contact email
               <Icon disabled name="mail" size="large" className="icon" />
             </label>
             <input
-              placeholder="Cet e-mail sera affiché publiquement"
+              placeholder="This email address will be displayed publicly"
               id="contact_email"
               type="text"
               name="contact_email"
               {...register('contact_email', {
-                required: 'Ce champ est obligatoire',
+                required: 'This field is mandatory',
                 pattern: {
                   value: /(.+)@(.+){2,}\.(.+){2,}/,
-                  message: 'Adresse e-mail invalide',
+                  message: 'Invalid email address',
                 },
               })}
             />
@@ -195,13 +195,13 @@ function Registration() {
               <Icon disabled name="pencil" size="large" className="icon" />
             </label>
             <textarea
-              placeholder="Décrivez votre organisme en quelques mots"
+              placeholder="Desbribe your organization in a few words"
               id="description"
               type="text"
               name="
               description"
               {...register('description', {
-                required: 'Ce champ est obligatoire',
+                required: 'This field is mandatory',
               })}
             />
           </div>
@@ -212,7 +212,7 @@ function Registration() {
               type="submit"
               className="ui color1 button"
             >
-              Envoyer
+              Send
 
             </Button>
           </div>

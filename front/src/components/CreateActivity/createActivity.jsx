@@ -86,11 +86,11 @@ return (
                 <img src={Sport} alt="Sport" className="image" />
             </div>
             <div className="container-form">
-                <h1 className="container-title">Créer une activité</h1>
+                <h1 className="container-title">Create an activity</h1>
                 <Form success className="ui form container-form" onSubmit={handleSubmit(onSubmit)}>
                     <div className="label-select">
                         <label className="label-form">
-                            URL de l&apos;image
+                            Image URL
                         </label>
                         <input
                             placeholder="URL de l'image qui sera associée à votre activité"
@@ -98,7 +98,7 @@ return (
                             type="url"
                             name="image_url"
                             {...register('image_url', {
-                                required: 'Ce champ est obligatoire',
+                                required: 'This field is mandatory',
                             })}
                         />
                     </div>
@@ -106,18 +106,18 @@ return (
 
                     <div className="label-select">
                         <label className="label-form">
-                            Nom de l&apos;activité
+                            Activity name
                         </label>
                         <input
-                            placeholder="ex. Cours de tennis débutants"
+                            placeholder="ex. Tennis lessons for beginners"
                             id="name"
                             type="text"
                             name="name"
                             {...register('name', {
-                                required: 'Ce champ est obligatoire',
+                                required: 'This field is mandatory',
                                 minLength: {
                                     value: 3,
-                                    message: '3 caractères minimum',
+                                    message: '3 characters minimum',
                                 },
                             })}
                         />
@@ -128,12 +128,12 @@ return (
                             Description
                         </label>
                         <textarea
-                            placeholder="Décrivez cette activité en quelques mots"
+                            placeholder="Describe this activity in a few words"
                             id="description"
                             type="text"
                             name="description"
                             {...register('description', {
-                                required: 'Ce champ est obligatoire',
+                                required: 'This field is mandatory',
                             })}
                         />
                     </div>
@@ -143,15 +143,15 @@ return (
                             Adresse
                         </label>
                         <input
-                            placeholder="Adresse où se déroule l'activité"
+                            placeholder="Address where the activity takes place"
                             id="address"
                             type="text"
                             name="address"
                             {...register('address', {
-                                required: 'Ce champ est obligatoire',
+                                required: 'This field is mandatory',
                                 minLength: {
                                     value: 3,
-                                    message: '3 caractères minimum',
+                                    message: '3 characters minimum',
                                 },
                             })}
                         />
@@ -162,15 +162,15 @@ return (
                             Ville
                         </label>
                         <input
-                            placeholder="Ville où se déroule l'activité"
+                            placeholder="City where the activity takes place"
                             id="city"
                             type="text"
                             name="city"
                             {...register('city', {
-                                required: 'Ce champ est obligatoire',
+                                required: 'This field is mandatory',
                                 minLength: {
                                     value: 3,
-                                    message: '3 caractères minimum',
+                                    message: '3 characters minimum',
                                 },
                             })}
                         />
@@ -178,18 +178,18 @@ return (
                     {errors.city && <p className="errors">{errors.city.message}</p>}
                     <div className="label-select">
                         <label>
-                            Code postal
+                            ZIP code
                         </label>
                         <input
-                            placeholder="Code postal"
+                            placeholder="ZIP code"
                             id="zip_code"
                             type="number"
                             name="zip_code"
                             {...register('zip_code', {
-                                required: 'Ce champ est obligatoire',
+                                required: 'This field is mandatory',
                                 pattern: {
                                     value: /^[0-9]{5}$/,
-                                    message: 'Format de code postal invalide',
+                                    message: 'Invalid zip code format',
                                 },
                             })}
                         />
@@ -197,47 +197,47 @@ return (
                     </div>
                     <div className="field">
                     <label className="label-select">
-                            Jour de l&apos;activité
+                            Day of the activity
                             <select
                                 id="day"
-                                {...register('day', { required: 'Ces champs sont obligatoires' })}
+                                {...register('day', { required: 'Those fields are mandatory' })}
                             >
-                                <option value="Lundi">Lundi</option>
-                                <option value="Mardi">Mardi</option>
-                                <option value="Mercredi">Mercredi</option>
-                                <option value="Jeudi">Jeudi</option>
-                                <option value="Vendredi">Vendredi</option>
-                                <option value="Samedi">Samedi</option>
-                                <option value="Dimanche">Dimanche</option>
+                                <option value="Monday">Monday</option>
+                                <option value="Tuesday">Tuesday</option>
+                                <option value="Wednesday">Wednesday</option>
+                                <option value="Thursday">Thursday</option>
+                                <option value="Friday">Friday</option>
+                                <option value="Saturday">Saturday</option>
+                                <option value="Sunday">Sunday</option>
                             </select>
                             {errors.day && <p className="errors">{errors.day.message}</p>}
                         </label>
 
                         <label className="label-select">
-                            Heure de début de l&apos;activité
+                            Start time of the activity
                             <input
                                 id="start_time"
-                                placeholder="Heure à laquelle débute l'activité"
+                                placeholder="Time when the activity starts"
                                 type="text"
                                 name="start_time"
                                 {...register('start_time', {
-                                    required: 'Ce champ est obligatoire',
+                                    required: 'This field is mandatory',
                                 })}
                             />
                             {errors.start_time && <p className="errors">{errors.start_time.message}</p>}
                         </label>
                         <label className="label-select">
-                            Heure de fin de l&apos;activité
+                            End time of the activity
                             <input
                                 id="end_time"
-                                placeholder="Heure à laquelle se termine l'activité"
+                                placeholder="Time when the activity ends"
                                 type="text"
                                 name="end_time"
                                 {...register('end_time', {
-                                    required: 'Ce champ est obligatoire',
+                                    required: 'This field is mandatory',
                                     minLength: {
                                         value: 3,
-                                        message: '3 caractères minimum',
+                                        message: '3 characters minimum',
                                     },
                                 })}
                             />
@@ -246,30 +246,30 @@ return (
                     </div>
                     <div className="label-select">
                     <label className="label-form">
-                            Tarif
+                            Price
                         </label>
                         <input
-                            placeholder="Combien coûte l'activité"
+                            placeholder="How much the activity costs"
                             id="price"
                             type="number"
                             name="price"
                             {...register('price', {
-                                required: 'Ce champ est obligatoire',
+                                required: 'This field is mandatory',
                             })}
                         />
                         {errors.price && <p className="errors">{errors.price.message}</p>}
                     </div>
                     <div className="label-select">
                     <label className="label-form">
-                            Type de tarif
+                            Type of price
                             <select
                                 id="price_type"
-                                {...register('price_type', { required: 'Ce champ est obligatoire' })}
+                                {...register('price_type', { required: 'This field is mandatory' })}
                             >
-                                <option value="la séance">la séance</option>
-                                <option value="par mois">par mois</option>
-                                <option value="par an">par an</option>
-                                <option value="par trimestre">par trimestre</option>
+                                <option value="per session">per session</option>
+                                <option value="per month">per month</option>
+                                <option value="per year">per year</option>
+                                <option value="per semester">per semester</option>
                             </select>
                             {errors.price_type && <p className="errors">{errors.price_type.message}</p>}
                         </label>
@@ -279,11 +279,11 @@ return (
                             Genre
                             <select
                                 id="gender"
-                                {...register('gender', { required: 'Les 2 champs sont obligatoires' })}
+                                {...register('gender', { required: 'Both fields are mandatory' })}
                             >
-                                <option value="Masculin">Masculin</option>
-                                <option value="Féminin">Féminin</option>
-                                <option value="Mixte">Mixte</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Mixed">Mixed</option>
                             </select>
                         </label>
                         </div>
@@ -292,11 +292,11 @@ return (
                             Niveau
                             <select
                                 id="level"
-                                {...register('level', { required: 'Les 2 champs sont obligatoires' })}
+                                {...register('level', { required: 'Both fields are mandatory' })}
                             >
-                                <option value="Débutant">Débutant</option>
-                                <option value="Tous niveaux">Tous niveaux</option>
-                                <option value="Confirmé">Confirmé</option>
+                                <option value="Beginners">Beginners</option>
+                                <option value="All levels">All levels</option>
+                                <option value="Experienced">Experienced</option>
                             </select>
                         </label>
                         {errors.gender && <p className="errors">{errors.gender.message}</p>}
@@ -306,7 +306,7 @@ return (
                             type="submit"
                             className="ui color1 button"
                         >
-                            Créer
+                            Create
                         </Button>
                     </div>
                     {isSubmitSuccessful.form && <p className="errors">{isSubmitSuccessful.form.message}</p>}

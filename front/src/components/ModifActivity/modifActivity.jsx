@@ -108,14 +108,14 @@ function ModifActivity({
             <div className="container">
                 <div className="container-form">
                     <div className="style_tit">
-                        <h1 className="style_tit">Modifier mon activité</h1>
+                        <h1 className="style_tit">Edit my activity</h1>
                     </div>
 
                     <form className="ui form container-form" onSubmit={handleSubmit(onSubmit)}>
 
                     <div className="label-select">
                         <label className="label-form">
-                                    URL de l&apos;image
+                                    Image URL
                         </label>
                                 <input
                                     placeholder={activity.image_url}
@@ -141,7 +141,7 @@ function ModifActivity({
 
                     <div className="label-select">
                         <label className="label-form">
-                                Adresse
+                                Address
                         </label>
                             <input
                                 placeholder={activity.address}
@@ -151,7 +151,7 @@ function ModifActivity({
                                 {...register('address', {
                                     minLength: {
                                         value: 3,
-                                        message: '3 caractères minimum',
+                                        message: '3 characters minimum',
                                     },
                                 })}
                             />
@@ -161,7 +161,7 @@ function ModifActivity({
 
                         <div className="label-select">
                         <label className="label-form">
-                                Ville
+                                City
                         </label>
                             <input
                                 placeholder={activity.city}
@@ -171,7 +171,7 @@ function ModifActivity({
                                 {...register('city', {
                                     minLength: {
                                         value: 3,
-                                        message: '3 caractères minimum',
+                                        message: '3 characters minimum',
                                     },
                                 })}
                             />
@@ -180,7 +180,7 @@ function ModifActivity({
 
                         <div className="label-select">
                             <label>
-                                Code postal
+                                Zip code
                             </label>
                             <input
                                 placeholder={activity.zip_code}
@@ -190,7 +190,7 @@ function ModifActivity({
                                 {...register('zip_code', {
                                     pattern: {
                                         value: /^[0-9]{5}$/,
-                                        message: 'Format du code postal invalide',
+                                        message: 'Invalid zip code format',
                                     },
                                 })}
                             />
@@ -198,24 +198,24 @@ function ModifActivity({
                         </div>
                         <div className="field">
                         <label className="label-select">
-                                Jour de l&apos;activité
+                                Day of the activity
                                 <select
                                     id="day"
                                     {...register('day')}
                                 >
-                                    <option value="Lundi">Lundi</option>
-                                    <option value="Mardi">Mardi</option>
-                                    <option value="Mercredi">Mercredi</option>
-                                    <option value="Jeudi">Jeudi</option>
-                                    <option value="Vendredi">Vendredi</option>
-                                    <option value="Samedi">Samedi</option>
-                                    <option value="Dimanche">Dimanche</option>
+                                    <option value="Monday">Monday</option>
+                                    <option value="Tuesday">Tuesday</option>
+                                    <option value="Wednesday">Wednesday</option>
+                                    <option value="Thursday">Thursday</option>
+                                    <option value="Friday">Friday</option>
+                                    <option value="Saturday">Saturday</option>
+                                    <option value="Sunday">Sunday</option>
 
                                 </select>
                         </label>
 
                         <label className="label-select">
-                                Heure de début de l&apos;activité
+                                Activity start time
                                 <input
                                     id="start_time"
                                     placeholder={activity.start_time}
@@ -224,7 +224,7 @@ function ModifActivity({
                                     {...register('start_time', {
                                         minLength: {
                                             value: 3,
-                                            message: '3 caractères minimum',
+                                            message: '3 characters minimum',
                                         },
                                     })}
                                 />
@@ -232,7 +232,7 @@ function ModifActivity({
 
                         </label>
                         <label className="label-select">
-                                Heure de fin de l&apos;activité
+                                Activity end time
                                 <input
                                     id="end_time"
                                     placeholder={activity.end_time}
@@ -241,7 +241,7 @@ function ModifActivity({
                                     {...register('end_time', {
                                         minLength: {
                                             value: 3,
-                                            message: '3 caractères minimum',
+                                            message: '3 characters minimum',
                                         },
                                     })}
                                 />
@@ -251,7 +251,7 @@ function ModifActivity({
                         {' '}
                         <div className="label-select">
                     <label className="label-form">
-                                Tarif
+                                Price
                     </label>
                             <input
                                 placeholder={activity.price}
@@ -261,7 +261,7 @@ function ModifActivity({
                                 {...register('price', {
                                     minLength: {
                                         value: 1,
-                                        message: '1 caractère minimum',
+                                        message: '1 character minimum',
                                     },
                                 })}
                             />
@@ -269,15 +269,15 @@ function ModifActivity({
                         </div>
                         <div className="label-select">
                             <label className="label-form">
-                                Type de tarif
+                                Price type
                                 <select
                                     id="price_type"
                                     {...register('price_type')}
                                 >
-                                    <option value="la séance">la séance</option>
-                                    <option value="par mois">par mois</option>
-                                    <option value="par an">par an</option>
-                                    <option value="par trimestre">par trimestre</option>
+                                    <option value="per session">per session</option>
+                                    <option value="per month">per month</option>
+                                    <option value="per year">per year</option>
+                                    <option value="per semester">per semester</option>
 
                                 </select>
 
@@ -285,28 +285,28 @@ function ModifActivity({
                         </div>
                         <div className="label-select">
                             <label className="label-form">
-                                Genre
+                                Gender
                                 <select
                                     id="gender"
                                     {...register('gender')}
                                 >
-                                <option value="Masculin">Masculin</option>
-                                <option value="Féminin">Féminin</option>
-                                <option value="Mixte">Mixte</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Mixed">Mixed</option>
 
                                 </select>
                             </label>
                         </div>
                             <div className="label-select">
                             <label className="label-select">
-                                Niveau
+                                Level
                                 <select
                                     id="level"
                                     {...register('level')}
                                 >
-                                    <option value="Débutant">Débutant</option>
-                                    <option value="Tous niveaux">Tous niveaux</option>
-                                    <option value="Confirmé">Confirmé</option>
+                                    <option value="Beginner">Beginner</option>
+                                    <option value="All levels">All levels</option>
+                                    <option value="Experienced">Experienced</option>
 
                                 </select>
                             </label>
@@ -316,7 +316,7 @@ function ModifActivity({
                                 type="submit"
                                 className="ui color1 button"
                             >
-                                Modifier
+                                Edit
 
                             </Button>
                         </div>

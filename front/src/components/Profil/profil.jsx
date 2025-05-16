@@ -83,7 +83,7 @@ function Profil({
       </div>
       <div className="organism-section">
         <div className="organism-infos-header">
-          <h1 className="organism-infos-header-title">Mon profil</h1>
+          <h1 className="organism-infos-header-title">My profile</h1>
           <p className="cancel-modif">
             <Link to="/organism/profile/edit" className="link">
               <Button
@@ -98,19 +98,19 @@ function Profil({
         </div>
         <div className="organism-infos-body">
           <div className="organism-field">
-            <h2>Nom</h2>
+            <h2>Name</h2>
             <p>{organism.name}</p>
           </div>
           <div className="organism-field">
-            <h2>E-mail de connexion</h2>
+            <h2>Login email</h2>
             <p>{organism.email}</p>
           </div>
           <div className="organism-field">
-            <h2>Numéro de téléphone</h2>
+            <h2>Phone number</h2>
             <p>{organism.phone_number}</p>
           </div>
           <div className="organism-field">
-            <h2>E-mail de contact</h2>
+            <h2>Contact email</h2>
             <p>{organism.contact_email}</p>
           </div>
           <div className="organism-field">
@@ -118,7 +118,7 @@ function Profil({
             <p>{organism.description}</p>
           </div>
           <div className="organism-delete">
-            <Button basic color="red" type="button" size="mini" onClick={handleClick}>Supprimer le profil</Button>
+            <Button basic color="red" type="button" size="mini" onClick={handleClick}>Delete profile</Button>
           </div>
           <div>
             <a href="https://storyset.com/sport" className="attribution">Sport illustrations by Storyset</a>

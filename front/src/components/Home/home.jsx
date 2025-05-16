@@ -25,7 +25,7 @@ function HomePage() {
   return (
     <div className="home">
       <header>
-        <h1 className="home-title"> Trouvez l&apos;activité qui vous correspond</h1>
+        <h1 className="home-title"> Find the activity that is made for you</h1>
       </header>
 
       <section className="form-home">
@@ -33,7 +33,7 @@ function HomePage() {
           <form className="ui large form">
             <div className="equal width fields">
               <div className="field color2">
-                <label>Nom de l&apos;activité</label>
+                <label>Activity name</label>
                 <input
                   placeholder="ex. judo"
                   value={state.keyword}
@@ -43,7 +43,7 @@ function HomePage() {
               </div>
 
               <div className="field color2">
-                <label>Code postal</label>
+                <label>Zip code</label>
                 <input
                   placeholder="ex. 75, 75006"
                   value={state.zip_code}

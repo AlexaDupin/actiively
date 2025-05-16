@@ -7,13 +7,13 @@ function Posts({ results }) {
   // Message depends on number of results
   const getMessage = () => {
     if (results.length === 0) {
-      return 'Aucun résultat ne correspond à votre recherche';
+      return 'No result for your search';
     }
     if (results.length === 1) {
-      return '1 résultat correspond à votre recherche';
+      return '1 result for your search';
     }
 
-    return `${results.length} résultats correspondent à votre recherche`;
+    return `${results.length} results for your search`;
   };
 
   return (

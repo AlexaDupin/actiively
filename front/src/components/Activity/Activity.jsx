@@ -125,7 +125,7 @@ function Activity({
                   {activity.end_time}
                 </Label>
               </Label.Group>
-              <Header as="h3" size="small">Informations de contact</Header>
+              <Header as="h3" size="small">Contact Information</Header>
               {organism.email}
               &nbsp;
               <Icon name="mail" />
@@ -138,7 +138,7 @@ function Activity({
         </Grid.Row>
         <Grid.Row>
           <Grid.Column mobile={12} computer={8}>
-            <Header as="h2" size="medium">L&apos;activité</Header>
+            <Header as="h2" size="medium">Activity</Header>
             {activity.description}
           </Grid.Column>
         </Grid.Row>
@@ -147,7 +147,7 @@ function Activity({
         <Grid.Row>
           <Grid.Column mobile={12} computer={8}>
             <Header as="h2" size="medium">
-              L&apos;association :
+              Organization:
               {' '}
               {organism.name}
             </Header>
@@ -160,14 +160,14 @@ function Activity({
         {currentPath === `/organism/activity/${activity.code_activity}` && (
         <Grid.Row>
           <Link to={`/organism/activity/${activity.code_activity}/edit`}>
-            <Button basic color="teal" type="button" size="mini">Modifier cette activité</Button>
+            <Button basic color="teal" type="button" size="mini">Edit this activity</Button>
           </Link>
         </Grid.Row>
         )}
         {/* If on organism page, show delete button */}
         {currentPath === `/organism/activity/${activity.code_activity}` && (
         <Grid.Row>
-          <Button basic color="red" type="submit" size="mini" onClick={handleClick}>Supprimer cette activité</Button>
+          <Button basic color="red" type="submit" size="mini" onClick={handleClick}>Delete this activity</Button>
         </Grid.Row>
         )}
       </Grid>

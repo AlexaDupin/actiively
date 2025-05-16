@@ -45,7 +45,7 @@ function Login({
 
       // Error if undefined is returned meaning that we don't have credentials in database
       if (token === undefined) {
-        setErrMsg('Vos identifiants n\'existent pas.');
+        setErrMsg('Your credentials do not exist.');
         localStorage.clear();
         navigate('/login');
         return;
@@ -58,11 +58,11 @@ function Login({
     }
     catch (err) {
       if (!err?.response) {
-        setErrMsg('Le serveur ne répond pas');
+        setErrMsg('The server cannot be reached.');
         console.log(errMsg);
       }
       else {
-        setErrMsg('Les identifiants ne correspondent pas. Veuillez réessayer.');
+        setErrMsg('Your credentials do not match. Please try again.');
         console.log(errMsg);
       }
     }
@@ -76,28 +76,28 @@ function Login({
 
       <div className="container-form container-form-login">
         <div>
-          <h2 className="form-title">Connexion organisme</h2>
+          <h2 className="form-title">Login as an organization</h2>
         </div>
         <div>
           <h2 className="form-error">{errMsg}</h2>
         </div>
         <form className="ui form container-form" onSubmit={handleSubmit}>
           <div className="field">
-            <label htmlFor="email">Votre adresse e-mail</label>
-            <input type="email" id="email" placeholder="Adresse e-mail" onChange={(event) => setEmail(event.target.value)} />
+            <label htmlFor="email">Your email address</label>
+            <input type="email" id="email" placeholder="Email address" onChange={(event) => setEmail(event.target.value)} />
           </div>
           <div className="field">
-            <label htmlFor="password">Votre mot de passe</label>
-            <input type="password" id="password" placeholder="Mot de passe" onChange={(event) => setPassword(event.target.value)} />
+            <label htmlFor="password">Your password</label>
+            <input type="password" id="password" placeholder="Password" onChange={(event) => setPassword(event.target.value)} />
           </div>
 
           <div className="field">
-            <button className="ui color1 button" type="submit">Connexion</button>
+            <button className="ui color1 button" type="submit">Login</button>
           </div>
 
         </form>
         <div>
-          <Link to="/register" className="link">Vous n&apos;avez pas encore de compte ?</Link>
+          <Link to="/register" className="link">Don&apos;t have an account yet?</Link>
         </div>
         <div>
           <a href="https://storyset.com/together" className="attribution">Together illustrations by Storyset</a>

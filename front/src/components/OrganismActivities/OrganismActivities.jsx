@@ -29,13 +29,13 @@ function OrganismActivities({
   // Message depends on number of results
   const getMessage = () => {
     if (activities.length === 0) {
-      return 'Vous n\'avez aucune activité';
+      return 'You don\'t have any activity';
     }
     if (activities.length === 1) {
-      return '1 activité proposée';
+      return '1 activity offered';
     }
 
-    return `${activities.length} activités proposées`;
+    return `${activities.length} activities offered`;
   };
 
   // useEffect so that data is fetched on mount

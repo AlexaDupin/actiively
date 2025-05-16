@@ -48,7 +48,7 @@ function Header({
         {!isLogged && (
 
         <Link to="/login">
-          <button type="button" className="appheader-button login-button">Connexion</button>
+          <button type="button" className="appheader-button login-button">Login</button>
           <FontAwesomeIcon icon={faUser} size="2x" className="appheader-button-mobile" />
         </Link>
         )}
@@ -64,7 +64,7 @@ function Header({
               to="/organism/profile"
               onClick={toggleBurger}
             >
-              Mon profil
+              My profile
             </NavLink>
             )}
           </li>
@@ -77,7 +77,7 @@ function Header({
               to="/organism/activities"
               onClick={toggleBurger}
             >
-              Mes activités
+              My activities
             </NavLink>
             )}
           </li>
@@ -89,7 +89,7 @@ function Header({
               to="/organism/create"
               onClick={toggleBurger}
             >
-              Ajouter une activité
+              Add an activity
             </NavLink>
             )}
           </li>
@@ -99,7 +99,7 @@ function Header({
               className="appheader-button"
               onClick={handleLogout}
             >
-              Déconnexion
+              Log out
             </NavLink>
             )}
           </li>

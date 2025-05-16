@@ -77,7 +77,7 @@ function ModifProfil({
       <div className="container">
         <div className="container-form">
           <div className="random">
-            <h1 className="container-title">Modifier mon profil</h1>
+            <h1 className="container-title">Edit my profile</h1>
             <p className="cancel-modif">
               <Link to="/organism/profile" className="link">
                 <Button
@@ -100,33 +100,33 @@ function ModifProfil({
             <div className="field">
 
               <label className="label-form">
-                Nom
+                Name
               </label>
               <input
                 placeholder={organism.name}
-                id="nom"
+                id="name"
                 type="text"
-                name="nom"
+                name="name"
                 {...register('name')}
               />
             </div>
 
             <div className="field">
               <label>
-                Numéro de téléphone
+                Phone number
               </label>
               <input
                 placeholder={organism.phone_number}
-                id="téléphone"
+                id="phone"
                 type="text"
-                name="téléphone"
+                name="phone"
                 {...register('phone_number')}
               />
             </div>
 
             <div className="field">
               <label>
-                E-mail de contact
+                Contact email
               </label>
               <input
                 placeholder={organism.contact_email}
@@ -150,7 +150,7 @@ function ModifProfil({
               />
             </div>
 
-            <Button type="submit" className="ui color1 button"> Modifier</Button>
+            <Button type="submit" className="ui color1 button">Edit</Button>
           </form>
         </div>
       </div>

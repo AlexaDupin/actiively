@@ -50,7 +50,7 @@ export function SearchContextProvider({ children }) {
     const act = `%${state.keyword}%`;
     const key = `${state.zip_code}%`;
     if (key === '%') {
-      swal('Oops! Veuillez saisir un code postal (entre 2 et 5 chiffres)');
+      swal('Oops! Please enter a zip code between 2 and 5 numbers.');
       return;
     }
     setSearch({
