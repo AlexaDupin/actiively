@@ -67,14 +67,14 @@ function Activity({
   // Alert modal to confirm delete activity
   const handleClick = () => {
     swal({
-      title: 'Voulez-vous vraiment supprimer cette activité ?',
-      buttons: ['Annuler', 'Supprimer l\'activité'],
+      title: 'Do you really want to delete this activity?',
+      buttons: ['Cancel', 'Delete activity'],
       dangerMode: true,
     })
       .then((willDelete) => {
         if (willDelete) {
           deleteActivity();
-          swal('L\'activité a bien été supprimée', {
+          swal('The activity has been deleted', {
             icon: 'success',
           });
         }
@@ -103,9 +103,8 @@ function Activity({
               <br />
               <Label.Group color="teal">
                 <Label as="a">
-                  {activity.price}
-                  {' '}
                   €
+                  {activity.price}
                   {' '}
                   {activity.price_type}
                 </Label>

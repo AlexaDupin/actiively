@@ -29,7 +29,7 @@ function OrganismActivities({
   // Message depends on number of results
   const getMessage = () => {
     if (activities.length === 0) {
-      return 'You don\'t have any activity';
+      return 'You don\'t have any activities';
     }
     if (activities.length === 1) {
       return '1 activity offered';

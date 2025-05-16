@@ -62,14 +62,14 @@ function Profil({
   // Alert modal to confirm delete profile
   const handleClick = () => {
     swal({
-      title: 'Voulez-vous vraiment supprimer le profil ?',
-      buttons: ['Annuler', 'Supprimer le profil'],
+      title: 'Do you really want to delete this profile?',
+      buttons: ['Cancel', 'Delete profile'],
       dangerMode: true,
     })
       .then((willDelete) => {
         if (willDelete) {
           deleteProfile();
-          swal('Votre profil a bien été supprimé', {
+          swal('Your profile has been deleted', {
             icon: 'success',
           });
         }

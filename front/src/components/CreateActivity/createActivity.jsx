@@ -58,13 +58,13 @@ function CreateActivity({
                 // console.log('response of create:', response.data);
                 if (response.data.error) {
                     swal({
-                        title: "L'activité doit avoir un nom unique !",
+                        title: 'The activity must have a unique name.',
                         icon: 'error',
                       });
                 }
                 else {
                     swal({
-                    title: "L'activité a bien été créée !",
+                    title: 'The activity has been created successfully!',
                     icon: 'success',
                   });
                 }
@@ -93,7 +93,7 @@ return (
                             Image URL
                         </label>
                         <input
-                            placeholder="URL de l'image qui sera associée à votre activité"
+                            placeholder="URL of the image associated with your activity"
                             id="image_url"
                             type="url"
                             name="image_url"
@@ -140,7 +140,7 @@ return (
                     {errors.name && <p className="errors">{errors.name.message}</p>}
                     <div className="label-select">
                         <label className="label-form">
-                            Adresse
+                            Address
                         </label>
                         <input
                             placeholder="Address where the activity takes place"
@@ -159,7 +159,7 @@ return (
                     {errors.address && <p className="errors">{errors.address.message}</p>}
                     <div className="label-select">
                         <label className="label-form">
-                            Ville
+                            City
                         </label>
                         <input
                             placeholder="City where the activity takes place"
@@ -276,7 +276,7 @@ return (
                     </div>
                     <div className="label-select">
                     <label className="label-form">
-                            Genre
+                            Gender
                             <select
                                 id="gender"
                                 {...register('gender', { required: 'Both fields are mandatory' })}
@@ -289,12 +289,12 @@ return (
                         </div>
                          <div className="label-select">
                         <label className="label-select">
-                            Niveau
+                            Level
                             <select
                                 id="level"
                                 {...register('level', { required: 'Both fields are mandatory' })}
                             >
-                                <option value="Beginners">Beginners</option>
+                                <option value="Beginner">Beginner</option>
                                 <option value="All levels">All levels</option>
                                 <option value="Experienced">Experienced</option>
                             </select>

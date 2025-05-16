@@ -59,9 +59,8 @@ function Post({
           {gender}
         </strong>
         <p className="post-price">
-          {price}
-          {' '}
           €
+          {price}
           {' '}
           {price_type}
         </p>

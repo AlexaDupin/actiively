@@ -29,7 +29,7 @@ function Filters() {
         type="button"
         onClick={handleChangeFilter}
       >
-        Filtres
+        Filters
       </button>
       {!hiden && (
       <div className="global-container">

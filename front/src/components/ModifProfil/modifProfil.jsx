@@ -34,7 +34,7 @@ function ModifProfil({
       .then((response) => {
         console.log(response.data);
         swal({
-          title: 'Le profil a bien été modifié !',
+          title: 'The profile has been edited!',
           icon: 'success',
         });
         setOrganism(response.data);

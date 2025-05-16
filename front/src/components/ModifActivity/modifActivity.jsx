@@ -70,7 +70,7 @@ function ModifActivity({
             .then((response) => {
                 console.log(response.data);
                 swal({
-                    title: "L'activité a bien été modifiée !",
+                    title: 'The activity has been edited!',
                     icon: 'success',
                   });
                 setActivity(response.data);
