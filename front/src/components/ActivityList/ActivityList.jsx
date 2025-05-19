@@ -9,7 +9,7 @@ function ActivityList() {
   const { filtersSelect } = useContext(FiltersContext);
   const { results } = useContext(SearchContext);
 
-  // function to mange array for props:
+  // function to manage array for props:
   const arr = results;
   const day1 = filtersSelect.monday;
   const day2 = filtersSelect.tuesday;
@@ -18,12 +18,12 @@ function ActivityList() {
   const day5 = filtersSelect.friday;
   const day6 = filtersSelect.saturday;
   const day7 = filtersSelect.sunday;
-  const gender1 = filtersSelect.mixt;
-  const gender2 = filtersSelect.women;
-  const gender3 = filtersSelect.men;
-  const level1 = filtersSelect.allLevel;
+  const gender1 = filtersSelect.mixed;
+  const gender2 = filtersSelect.female;
+  const gender3 = filtersSelect.male;
+  const level1 = filtersSelect.allLevels;
   const level2 = filtersSelect.beginner;
-  const level3 = filtersSelect.confirmed;
+  const level3 = filtersSelect.advanced;
 
   function data(table) {
     const isdayfiltrenotactive = (

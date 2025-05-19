@@ -306,7 +306,7 @@ function ModifActivity({
                                 >
                                     <option value="Beginner">Beginner</option>
                                     <option value="All levels">All levels</option>
-                                    <option value="Experienced">Experienced</option>
+                                    <option value="Advanced">Advanced</option>
 
                                 </select>
                             </label>

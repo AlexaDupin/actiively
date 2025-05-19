@@ -123,7 +123,7 @@ function Filters() {
                 <input
                   id="opt-in"
                   type="checkbox"
-                  name="allLevel"
+                  name="allLevels"
                   onChange={handleCheckBoxChange}
                 />
                 <span>All levels</span>
@@ -146,10 +146,10 @@ function Filters() {
                 <input
                   id="opt-in"
                   type="checkbox"
-                  name="confirmed"
+                  name="advanced"
                   onChange={handleCheckBoxChange}
                 />
-                <span>Experienced</span>
+                <span>Advanced</span>
               </label>
             </div>
           </div>
@@ -162,7 +162,7 @@ function Filters() {
                 <input
                   id="opt-in"
                   type="checkbox"
-                  name="mixt"
+                  name="mixed"
                   onChange={handleCheckBoxChange}
                 />
                 <span>Mixed</span>
@@ -173,7 +173,7 @@ function Filters() {
                 <input
                   id="opt-in"
                   type="checkbox"
-                  name="women"
+                  name="female"
                   onChange={handleCheckBoxChange}
                 />
                 <span>Female</span>
@@ -184,7 +184,7 @@ function Filters() {
                 <input
                   id="opt-in"
                   type="checkbox"
-                  name="men"
+                  name="male"
                   onChange={handleCheckBoxChange}
                 />
                 <span>Male</span>

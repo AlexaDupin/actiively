@@ -281,9 +281,9 @@ return (
                                 id="gender"
                                 {...register('gender', { required: 'Both fields are mandatory' })}
                             >
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                                <option value="Mixed">Mixed</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="mixed">Mixed</option>
                             </select>
                         </label>
                         </div>
@@ -294,9 +294,9 @@ return (
                                 id="level"
                                 {...register('level', { required: 'Both fields are mandatory' })}
                             >
-                                <option value="Beginner">Beginner</option>
-                                <option value="All levels">All levels</option>
-                                <option value="Experienced">Experienced</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="allLevels">All levels</option>
+                                <option value="advanced">Advanced</option>
                             </select>
                         </label>
                         {errors.gender && <p className="errors">{errors.gender.message}</p>}

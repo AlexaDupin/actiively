@@ -8,12 +8,12 @@ const FilterInitial = {
   friday: '',
   saturday: '',
   sunday: '',
-  allLevel: '',
+  allLevels: '',
   beginner: '',
-  confirmed: '',
-  mixt: '',
-  women: '',
-  men: '',
+  advanced: '',
+  mixed: '',
+  female: '',
+  male: '',
 };
 
 function filterReducer(oldState, action) {
@@ -22,7 +22,7 @@ function filterReducer(oldState, action) {
       if (action.payload.name === 'monday') {
         let monday = (action.payload.value);
         if (monday) {
-          monday = 'Lundi';
+          monday = 'Monday';
         }
         else {
           monday = '';
@@ -35,7 +35,7 @@ function filterReducer(oldState, action) {
       if (action.payload.name === 'tuesday') {
         let tuesday = (action.payload.value);
         if (tuesday) {
-          tuesday = 'Mardi';
+          tuesday = 'Tuesday';
         }
         else {
           tuesday = '';
@@ -48,7 +48,7 @@ function filterReducer(oldState, action) {
       if (action.payload.name === 'wednesday') {
         let wednesday = (action.payload.value);
         if (wednesday) {
-          wednesday = 'Mercredi';
+          wednesday = 'Wednesday';
         }
         else {
           wednesday = '';
@@ -61,7 +61,7 @@ function filterReducer(oldState, action) {
       if (action.payload.name === 'thursday') {
         let thursday = (action.payload.value);
         if (thursday) {
-          thursday = 'Jeudi';
+          thursday = 'Thursday';
         }
         else {
           thursday = '';
@@ -74,7 +74,7 @@ function filterReducer(oldState, action) {
       if (action.payload.name === 'friday') {
         let friday = (action.payload.value);
         if (friday) {
-          friday = 'Vendredi';
+          friday = 'Friday';
         }
         else {
           friday = '';
@@ -87,7 +87,7 @@ function filterReducer(oldState, action) {
       if (action.payload.name === 'saturday') {
         let saturday = (action.payload.value);
         if (saturday) {
-          saturday = 'Samedi';
+          saturday = 'Saturday';
         }
         else {
           saturday = '';
@@ -101,7 +101,7 @@ function filterReducer(oldState, action) {
       if (action.payload.name === 'sunday') {
         let sunday = (action.payload.value);
         if (sunday) {
-          sunday = 'Dimanche';
+          sunday = 'Sunday';
         }
         else {
           sunday = '';
@@ -111,23 +111,23 @@ function filterReducer(oldState, action) {
           sunday,
         };
       }
-      if (action.payload.name === 'allLevel') {
-        let allLevel = (action.payload.value);
-        if (allLevel) {
-          allLevel = 'Tous niveaux';
+      if (action.payload.name === 'allLevels') {
+        let allLevels = (action.payload.value);
+        if (allLevels) {
+          allLevels = 'All levels';
         }
         else {
-          allLevel = '';
+          allLevels = '';
         }
         return {
           ...oldState,
-          allLevel,
+          allLevels,
         };
       }
       if (action.payload.name === 'beginner') {
         let beginner = (action.payload.value);
         if (beginner) {
-          beginner = 'Débutant';
+          beginner = 'Beginner';
         }
         else {
           beginner = '';
@@ -137,56 +137,56 @@ function filterReducer(oldState, action) {
           beginner,
         };
       }
-      if (action.payload.name === 'confirmed') {
-        let confirmed = (action.payload.value);
-        if (confirmed) {
-          confirmed = 'Confirmé';
+      if (action.payload.name === 'advanced') {
+        let advanced = (action.payload.value);
+        if (advanced) {
+          advanced = 'Advanced';
         }
         else {
-          confirmed = '';
+          advanced = '';
         }
         return {
           ...oldState,
-          confirmed,
+          advanced,
         };
       }
-      if (action.payload.name === 'mixt') {
-        let mixt = (action.payload.value);
-        if (mixt) {
-          mixt = 'Mixte';
+      if (action.payload.name === 'mixed') {
+        let mixed = (action.payload.value);
+        if (mixed) {
+          mixed = 'Mixed';
         }
         else {
-          mixt = '';
+          mixed = '';
         }
         return {
           ...oldState,
-          mixt,
+          mixed,
         };
       }
-      if (action.payload.name === 'women') {
-        let women = (action.payload.value);
-        if (women) {
-          women = 'Féminin';
+      if (action.payload.name === 'female') {
+        let female = (action.payload.value);
+        if (female) {
+          female = 'Female';
         }
         else {
-          women = '';
+          female = '';
         }
         return {
           ...oldState,
-          women,
+          female,
         };
       }
-      if (action.payload.name === 'men') {
-        let men = (action.payload.value);
-        if (men) {
-          men = 'Masculin';
+      if (action.payload.name === 'male') {
+        let male = (action.payload.value);
+        if (male) {
+          male = 'Male';
         }
         else {
-          men = '';
+          male = '';
         }
         return {
           ...oldState,
-          men,
+          male,
         };
       }
       return {
