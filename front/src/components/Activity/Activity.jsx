@@ -22,7 +22,7 @@ function Activity({
   // Request to API to get data for an Activity with an id in URL
   const fetchActivity = async () => {
     try {
-      const response = await axios.get(`https://actiively-back-zjty.onrender.com/api/v1/activity/${id}`);
+      const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/activity/${id}`);
       // Update states with results
       setActivity(response.data);
       setOrganism(response.data.organism_infos);
@@ -38,7 +38,7 @@ function Activity({
     () => {
       fetchActivity();
     },
-    [activity],
+    [],
   );
   // To identify the page we are currently on
   const location = useLocation();
@@ -52,7 +52,7 @@ function Activity({
   const deleteActivity = async () => {
     try {
       await axios.delete(
-        `https://actiively-back-zjty.onrender.com/api/v1/organism/activity/${id}/delete`,
+        `${process.env.REACT_APP_BASE_URL}/organism/activity/${id}/delete`,
         {
           headers: { authorization: token },
         },

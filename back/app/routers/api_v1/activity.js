@@ -39,7 +39,7 @@ router
            }
      * }
     */
-    .get(controllerHandler(controller.getOneActivty))
+    .get(controllerHandler(controller.getOneActivity))
 router
     .route('/search')
     /**

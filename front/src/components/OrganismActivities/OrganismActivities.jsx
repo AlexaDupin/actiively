@@ -14,7 +14,7 @@ function OrganismActivities({
   // Request to API to get activities of an organism
   const fetchActivities = async () => {
     try {
-      const response = await axios.get('https://actiively-back-zjty.onrender.com/api/v1/organism/activities', {
+      const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/organism/activities`, {
         headers: {
           authorization: token,
         },

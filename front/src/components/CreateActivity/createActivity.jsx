@@ -46,7 +46,7 @@ function CreateActivity({
         // console.log('data:', data);
         axios
             .post(
-                'https://actiively-back-zjty.onrender.com/api/v1/organism/create',
+                `${process.env.REACT_APP_BASE_URL}/organism/create`,
                 data,
                 {
                     headers: {

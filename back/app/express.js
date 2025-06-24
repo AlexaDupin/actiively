@@ -6,13 +6,15 @@ const cors = require('cors');
 const job = require("./config/cron.js");
 
 const app = express();
-job.start();
+
+if(process.env.NODE_ENV === "production") job.start();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 const corsOptions = {
+    origin: process.env.FRONT_URL || 'http://localhost:3000',
     // origin: 'http://localhost:3000',
-    origin: 'https://actiively-front.onrender.com',
+    // origin: 'https://actiively-front.onrender.com',
     // origin: '*',
     optionsSuccessStatus: 200
 };

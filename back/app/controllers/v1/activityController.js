@@ -11,7 +11,7 @@ module.exports = {
      * @param {*} res 
      * @returns an object containing one activity
      */
-    async getOneActivty(req, res){
+    async getOneActivity(req, res){
         const activity = await activityDatamapper.findByPk(req.params.id);
         return res.json(activity);
     },
@@ -23,7 +23,6 @@ module.exports = {
      */
     async getOneOrganismActivity(req, res){
             const activity = await activityDatamapper.findActivityByOrganism(req.params.id, req.decodedToken.id); //TODO: change email by code_organism
-            console.log(res.json(activity));
             return res.json(activity);
     },
     /**

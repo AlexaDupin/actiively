@@ -19,7 +19,7 @@ function Profil({
   // Request to API to get profile data of an organism depending on token
   const fetchOrganism = async () => {
     try {
-      const response = await axios.get('https://actiively-back-zjty.onrender.com/api/v1/organism/profile', {
+      const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/organism/profile`, {
         headers: {
           authorization: token,
         },
@@ -44,7 +44,7 @@ function Profil({
   const deleteProfile = async () => {
     try {
       await axios.delete(
-        'https://actiively-back-zjty.onrender.com/api/v1/organism/profile/delete',
+        `${process.env.REACT_APP_BASE_URL}/organism/profile/delete`,
         {
           headers: { authorization: token },
         },
