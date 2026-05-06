@@ -10,7 +10,7 @@ Try searching with ZIP code `75`.
 
 ## Preview
 
-<img width="673" height="500" alt="Actiively search results page" src="https://github.com/user-attachments/assets/57db436d-fa37-403d-bc24-f260d59793f0" />
+<img width="750" height="444" alt="Actiively search results page" src="https://github.com/user-attachments/assets/57db436d-fa37-403d-bc24-f260d59793f0" />
 
 ## Project context
 
