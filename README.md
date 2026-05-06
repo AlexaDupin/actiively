@@ -5,13 +5,12 @@ Full-stack activity discovery platform built with React, Node.js, Express, Postg
 Actiively helps users find sports and artistic activities based on keyword, ZIP code, availability, level, and gender. Organizations can create an account, manage their profile, and publish activities.
 
 [Live demo](https://actiively-front.onrender.com/)  
-[GitHub repository](https://github.com/AlexaDupin/actiively)
 
 Try searching with ZIP code `75`.
 
 ## Preview
 
-<img width="673" height="444" alt="Actiively search results page" src="https://github.com/user-attachments/assets/57db436d-fa37-403d-bc24-f260d59793f0" />
+<img width="673" height="500" alt="Actiively search results page" src="https://github.com/user-attachments/assets/57db436d-fa37-403d-bc24-f260d59793f0" />
 
 ## Project context
 
